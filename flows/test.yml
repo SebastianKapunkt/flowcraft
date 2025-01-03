@@ -1,0 +1,17 @@
+task1:
+  duration: 60
+  title: "Task 1"
+  text: "This is the first task."
+  picture: "img/task1.png"
+
+task2:
+  duration: 120
+  title: "Task 2"
+  text: "This is the second task."
+  picture: "img/task2.png"
+
+task3:
+  duration: 180
+  title: "Task 3"
+  text: "This is the third task."
+  picture: "img/task3.png"
