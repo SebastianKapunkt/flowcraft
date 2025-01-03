@@ -1,17 +1,53 @@
 task1:
-  duration: 60
+  duration: 10
   title: "Task 1"
   text: "This is the first task."
   picture: "img/task1.png"
 
 task2:
-  duration: 120
+  duration: 10
   title: "Task 2"
   text: "This is the second task."
   picture: "img/task2.png"
 
 task3:
-  duration: 180
+  duration: 10
   title: "Task 3"
+  text: "This is the third task."
+  picture: "img/task3.png"
+
+task4:
+  duration: 10
+  title: "Task 4"
+  text: "This is the third task."
+  picture: "img/task3.png"
+
+task5:
+  duration: 10
+  title: "Task 5"
+  text: "This is the third task."
+  picture: "img/task3.png"
+
+task6:
+  duration: 10
+  title: "Task 6"
+  text: "This is the third task."
+  picture: "img/task3.png"
+
+task7:
+  duration: 10
+  title: "Task 7"
+  text: "This is the third task."
+  picture: "img/task3.png"
+
+task8:
+  duration: 10
+  title: "Task 8"
+  text: "This is the third task."
+  picture: "img/task3.png"
+
+task9:
+  duration: 10
+  title: "Task 9"
   text: "This is the third task."
   picture: "img/task3.png"

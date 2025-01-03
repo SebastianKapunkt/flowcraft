@@ -1,8 +1,8 @@
 let yaml = undefined
 const config = {
-  durationStep: 10,
-  gap: 10,
-  tick: 1000,
+  durationStep: 5,
+  gap: 1,
+  tick: 500,
   currentY: Math.round(window.innerHeight / 2),
   isDragging: false
 }
@@ -36,7 +36,7 @@ async function loadFlowFromYaml(filePath) {
       time,
       time + itemData.duration
     )
-    time += itemData.duration + config.gap / config.durationStep
+    time += itemData.duration + config.gap
     if (previousNode) {
       previousNode.next = task
     } else {
