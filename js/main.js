@@ -1,10 +1,10 @@
 let yaml = undefined
 const config = {
-  durationStep: 5,
-  gap: 1,
-  tick: 500,
+  durationStep: 10,
+  gap: 2,
+  tick: 1000,
   currentY: Math.round(window.innerHeight / 2),
-  isDragging: false
+  isDragging: false,
 }
 
 function setYaml(y) {
@@ -81,7 +81,7 @@ function startFlow(startNode, endTick) {
     config.currentY -= config.durationStep
     flowElement.style.transform = `translate(0, ${config.currentY}px)`
     checkTasks(ticks, startNode)
-    if (ticks === endTick) {
+    if (ticks > endTick) {
       clearInterval(intervalId)
     }
   }, config.tick)
@@ -97,6 +97,7 @@ function checkTasks(ticks, startNode) {
       console.log("Task: ", currentTask.title)
       let audio = document.getElementById("audio")
       audio.play();
+      alert(currentTask.title)
     }
     currentTask = currentTask.next
   }
@@ -198,7 +199,7 @@ class TaskElement extends HTMLElement {
   render() {
     return `
       <div style="height: ${this.duration * 10}px; width: 100%; background: yellow">
-        ${this.title}
+        ${this.title} - ${this.startFrame} - ${this.endFrame}
       </div>
   `
   }
