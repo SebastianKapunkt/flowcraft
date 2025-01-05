@@ -97,7 +97,6 @@ function checkTasks(ticks, startNode) {
       console.log("Task: ", currentTask.title)
       let audio = document.getElementById("audio")
       audio.play();
-      alert(currentTask.title)
     }
     currentTask = currentTask.next
   }
